@@ -20,13 +20,13 @@ body{
 
 
 
-.printemps{
+/* .printemps{
     font-family: "Oswald", sans-serif;
     width: 100%;
     height: 100vh;
     position: relative;
     
-}
+} 
 
 
 .printemps::before{
@@ -36,7 +36,7 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.479);
 
-}
+} 
 
 
 .txtprintemps{
@@ -62,7 +62,7 @@ body{
     font-size: 15px;
     text-transform: uppercase;
     border: 1px solid white;
-}
+} */
 
 
 
@@ -133,17 +133,118 @@ nav{
     grid-column: span 12;
 }
 
+
+.printemps{
+    height: 700px;
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.printemps::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+
+}
+
+
+.txtprintemps{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.btn{
+    margin: auto;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
 /* -------------------page top 30 */
 
+.cards-top30{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    /* grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); */
+}
 
 
+.card-top30{
+    position: relative;
+    width: 100%;
+    grid-column: span 6;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
 
+.bigcard-top30{
+    position: relative;
+    width: 100%;
+    grid-column: span 6;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+/* .infocard-30{
+    display: flex;
+} */
+
+/* -------------------page top 30  fin*/
 
 
 
  
 }
-/* responsive de "0" jusqua 770px */
+/* responsive de "0" jusqua 770px fin */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -212,9 +313,72 @@ nav{
     }
 }
 
+/* -------------------page top 30 */
+
+.cards-top30{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    /* grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+
+.card-top30{
+    position: relative;
+    width: 100%;
+    grid-column: span 6;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.bigcard-top30{
+    position: relative;
+    width: 100%;
+    grid-column: span 6;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+/* .infocard-30{
+    display: flex;
+} */
+
+/* -------------------page top 30 */
+
  
 }
 /* media a partir de 770px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -285,6 +449,52 @@ nav{
         object-fit: cover;
     }
 }
+
+/* -------------------page top 30 */
+
+.cards-top30{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    /* grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+
+.card-top30{
+    position: relative;
+    width: 100%;
+    grid-column: span 3;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.bigcard-top30{
+    position: relative;
+    width: 100%;
+    grid-column: span 6;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+
+
+
+/* 
+.infocard-30{
+    display: flex;
+} */
+
+/* -------------------page top 30 */
 
  
 }
