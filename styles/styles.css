@@ -14,4 +14,279 @@ img{
 /* enlève les bordures autour du body */
 body{
     margin: 0;
+    background-image: url(../img/bg_pattern.png);
+    
 }
+
+
+
+.printemps{
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+.printemps::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+
+}
+
+
+.txtprintemps{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.btn{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+/* responsive de "0" jusqua 770px */
+
+@media (max-width: 770px) {
+    
+nav{
+    background-image: url(../img/bg_pattern.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+
+
+    img{
+        width: 25%;
+    }
+    a{
+        display: none;
+        width: fit-content;
+    }
+    .logonavbar{
+        display: inline-block;
+    }
+
+    
+}
+
+.cards{
+    display: grid;
+    /* grid-template-columns:repeat(12, 1fr); */
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.card{
+    position: relative;
+    width: 100%;
+    grid-column: span 6;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.h2test::before{
+    content: "tops & t-shirts";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.big-card{
+    width: 100%;
+    grid-column: span 12;
+}
+
+/* -------------------page top 30 */
+
+
+
+
+
+
+
+ 
+}
+/* responsive de "0" jusqua 770px */
+
+
+
+
+
+
+
+/* media a partir de 770px */
+@media (min-width: 770px) {
+
+    
+nav{
+    background-image: url(../img/bg_pattern.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+
+    img{
+        width: 25%;
+    }
+    a{
+        width: fit-content;
+    }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    /* grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+
+.card{
+    position: relative;
+    width: 100%;
+    grid-column: span 6;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.h2test::before{
+    content: "tops & t-shirts";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.big-card{
+    object-fit: cover;
+    width: 100%;
+    grid-column: span 12;
+    img{
+        width: 100%;
+    }
+}
+
+ 
+}
+/* media a partir de 770px */
+
+
+
+
+
+
+
+/* media a partir de 1024px */
+@media (min-width: 1024px) {
+
+    
+nav{
+    gap: 20px;
+    background-image: url(../img/bg_pattern.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+
+    img{
+        width: 50%;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:repeat(12, 1fr);
+    /* grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+
+.card{
+    position: relative;
+    width: 100%;
+    grid-column: span 3;
+    /* grid-row: span ; */
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+.h2test::before{
+    content: "tops & t-shirts";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.big-card{
+    object-fit: cover;
+    width: 100%;
+    grid-column: span 4;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+ 
+}
+/* media a partir de 1024px */
+
