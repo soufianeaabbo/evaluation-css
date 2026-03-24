@@ -18,51 +18,13 @@ body{
     
 }
 
-
-
-/* .printemps{
-    font-family: "Oswald", sans-serif;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    
-} 
-
-
-.printemps::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.479);
-
-} 
-
-
-.txtprintemps{
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    height: 200px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-
-    a{
-        text-decoration: none;
-        color: white;
-    }
+.wrapper{
+    margin: auto;
+    width: 80%;
 }
 
-.btn{
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-    font-size: 15px;
-    text-transform: uppercase;
-    border: 1px solid white;
-} */
+
+
 
 
 
@@ -71,32 +33,71 @@ body{
 
 /* responsive de "0" jusqua 770px */
 
-@media (max-width: 770px) {
+@media (max-width: 769px) {
     
 nav{
+    position: fixed;
+    top: 0%;
+    z-index: 1;
     background-image: url(../img/bg_pattern.png);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 70px;
-
+    
 
     img{
-        width: 25%;
+        width: 40%;
     }
-    a{
+    
+    .none{
         display: none;
         width: fit-content;
     }
     .logonavbar{
+        width: fit-content;
         display: inline-block;
     }
-
-    
+ 
 }
 
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    width: 50px;
+    height: 50px;
+} 
+
+ .hr{
+    border-radius: 2px;
+    background-color: black;
+    width: 60%;
+    height: 3px;
+    margin: 3px;
+} 
+
+
+.titre{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    width: 60%;
+    margin: auto;
+    margin-top: 20%;
+    h1{
+        margin-bottom: 0%;
+    }
+}
+
+
+
+
 .cards{
+    margin-top: 15%;
     display: grid;
     /* grid-template-columns:repeat(12, 1fr); */
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
@@ -127,10 +128,26 @@ nav{
 }
 
 
+.h2bigcard::before{
+    content: "tops & t-shirts";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 .big-card{
+    position: relative;
     width: 100%;
     grid-column: span 12;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 
@@ -158,6 +175,9 @@ nav{
 
 
 .txtprintemps{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 30px;
     text-align: center;
     color: white;
     position: absolute;
@@ -168,12 +188,16 @@ nav{
         text-decoration: none;
         color: white;
     }
+   
 }
 
 .btn{
+    font-size: 18px;
+    padding: 20px 10px;
+    width: 60%;
     margin: auto;
     text-transform: uppercase;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 
@@ -187,8 +211,13 @@ nav{
 
 /* -------------------page top 30 */
 
+
+.wrapper{
+    width: 100%;
+}
 .cards-top30{
-    gap: 1rem;
+    font-family: "Oswald", sans-serif;
+    gap: 2rem;
     display: grid;
     grid-template-columns:repeat(12, 1fr);
     /* grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); */
@@ -199,6 +228,7 @@ nav{
     position: relative;
     width: 100%;
     grid-column: span 6;
+    margin-top: 20px;
     /* grid-row: span ; */
     img{
         width: 100%;
@@ -221,12 +251,117 @@ nav{
     
 }
 
-/* .infocard-30{
+
+.infobigcard-30{
+
+    margin-bottom: 20px;
+    margin-top: 20px;
     display: flex;
-} */
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.infocard-30{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.basket{
+    font-weight: bold;
+}
+
+
+
+
+
+.printemps30{
+    margin-top: 10%;
+    height: 700px;
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.printemps30::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+
+}
+
+
+.txtprintemps30{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    a{
+        text-decoration: none;
+        color: white;
+    }
+   
+}
+
+
 
 /* -------------------page top 30  fin*/
 
+
+
+
+/* footer */
+
+footer{
+    font-family: "Oswald", sans-serif;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.question, .apropos, .rencontre{
+    line-height: 10px;
+}
+
+.question p:nth-child(5){
+    font-weight: bold;
+}
+
+.question p:nth-child(2){
+    font-weight: bold;
+}
+
+
+
+.icone{
+
+}
+
+i{
+    font-size: 20px;
+}
+
+i:hover{
+    color: red;
+}
+/* footer */
 
 
  
@@ -259,18 +394,60 @@ nav{
 nav{
     background-image: url(../img/bg_pattern.png);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 82%;
     height: 70px;
 
     img{
-        width: 25%;
+        width: 40%;
     }
-    a{
+
+
+    
+   .none{
+        display: none;
         width: fit-content;
     }
+    .logonavbar{
+        width: fit-content;
+        display: inline-block;
+    }
+
+    
 }
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    width: 50px;
+    height: 50px;
+} 
+
+ .hr{
+    border-radius: 2px;
+    background-color: black;
+    width: 60%;
+    height: 3px;
+    margin: 3px;
+} 
+
+.titre{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    margin: auto;
+    margin-top: 5%;
+    h1{
+        margin-bottom: 0%;
+    }
+}
+
+
 
 .cards{
     display: grid;
@@ -304,14 +481,83 @@ nav{
 
 
 
+.h2bigcard::before{
+    content: "tops & t-shirts";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+
 .big-card{
     object-fit: cover;
     width: 100%;
-    grid-column: span 12;
+    grid-column: span 4;
     img{
+        height: 100%;
         width: 100%;
     }
 }
+
+
+
+/* section collection printemps */
+
+.printemps{
+    height: 700px;
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.printemps::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    
+}
+
+
+.txtprintemps{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+}
+
+.btn{
+    font-size: 18px;
+    padding: 20px 10px;
+    width: 30%;
+    margin: auto;
+    text-transform: uppercase;
+    border: 2px solid white;
+}
+
+/* section collection printemps */
 
 /* -------------------page top 30 */
 
@@ -355,6 +601,42 @@ nav{
 
 /* -------------------page top 30 */
 
+/* footer */
+
+footer{
+    font-family: "Oswald", sans-serif;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.question, .apropos, .rencontre{
+    line-height: 10px;
+}
+
+.question p:nth-child(5){
+    font-weight: bold;
+}
+
+.question p:nth-child(2){
+    font-weight: bold;
+}
+
+
+
+.icone{
+
+}
+
+i{
+    font-size: 20px;
+}
+
+i:hover{
+    color: red;
+}
+/* footer */
  
 }
 /* media a partir de 770px */
@@ -389,23 +671,84 @@ nav{
 /* media a partir de 1024px */
 @media (min-width: 1024px) {
 
+    .wrapper{
+        /* width: 100%; */
+    }
     
 nav{
-    gap: 20px;
-    background-image: url(../img/bg_pattern.png);
-    display: flex;
-    justify-content: center;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: url(../img/sprite-logos-sezane.1b4dea5a.svg);
+    display: flex;
     width: 100%;
     height: 70px;
 
     img{
         width: 50%;
     }
-    a{
+    .none{
+        display: block;
         text-decoration: none;
+        color: rgb(255, 255, 255);
+        width: fit-content;
     }
 }
+
+
+.navbar{
+    
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: url(../img/sprite-logos-sezane.1b4dea5a.svg);
+    display: flex;
+    width: 100%;
+    height: 70px;
+
+    img{
+        width: 50%;
+    }
+    .none{
+        display: block;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        width: fit-content;
+    }
+}
+
+
+
+.burger{
+    display: none;
+    background-color: red;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    width: 50px;
+    height: 50px;
+} 
+
+ .hr{
+    border-radius: 2px;
+    background-color: black;
+    width: 60%;
+    height: 3px;
+    margin: 3px;
+} 
+
+
+
+
+/* .logonavbar{
+    display: block;
+} */
 
 .cards{
     display: grid;
@@ -440,6 +783,7 @@ nav{
 
 
 .big-card{
+    position: relative;
     object-fit: cover;
     width: 100%;
     grid-column: span 4;
@@ -450,9 +794,107 @@ nav{
     }
 }
 
+
+
+/* section collection printemps */
+
+.printemps30{
+    height: 700px;
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+.printemps30::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.479);
+    
+}
+
+
+.txtprintemps30{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+}
+
+.btn{
+    font-size: 18px;
+    padding: 20px 10px;
+    width: 15%;
+    margin: auto;
+    text-transform: uppercase;
+    border: 2px solid white;
+}
+
+/* section collection printemps */
+
+footer{
+    font-family: "Oswald", sans-serif;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.question, .apropos, .rencontre{
+    line-height: 10px;
+}
+
+.question p:nth-child(5){
+    font-weight: bold;
+}
+
+.question p:nth-child(2){
+    font-weight: bold;
+}
+
+
+
+.icone{
+
+}
+
+i{
+    font-size: 20px;
+}
+
+i:hover{
+    color: red;
+}
+/* footer */
+
+
+
+
+
+
 /* -------------------page top 30 */
 
+
 .cards-top30{
+    margin-bottom: 5%;
     gap: 1rem;
     display: grid;
     grid-template-columns:repeat(12, 1fr);
@@ -461,7 +903,7 @@ nav{
 
 
 .card-top30{
-    position: relative;
+    margin-top: 50px;
     width: 100%;
     grid-column: span 3;
     /* grid-row: span ; */
@@ -474,29 +916,41 @@ nav{
 }
 
 .bigcard-top30{
-    position: relative;
     width: 100%;
     grid-column: span 6;
-    /* grid-row: span ; */
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
     
+    
 }
 
 
 
 
-/* 
-.infocard-30{
+
+.infobigcard-30{
+    margin-top: 20px;
+    height: 20px;
     display: flex;
-} */
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.infocard-30{
+    height: 20px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
 
 /* -------------------page top 30 */
 
  
 }
-/* media a partir de 1024px */
+/* media a partir de 1024px  fin*/
 
